@@ -13,8 +13,8 @@ module.exports = yeoman.generators.Base.extend({
         this.destinationPath('/public')
       );
       this.fs.copy(
-        this.templatePath('README.md'),
-        this.destinationPath('/README.md')
+        this.templatePath('LICENSE.md'),
+        this.destinationPath('/LICENSE.md')
       );
       this.fs.copy(
         this.templatePath('bower.json'),
@@ -35,6 +35,10 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(
         this.templatePath('.bowerrc'),
         this.destinationPath('/.bowerrc')
+      );
+      this.fs.copy(
+        this.templatePath('.gitignore'),
+        this.destinationPath('/.gitignore')
       );
     }
   },
