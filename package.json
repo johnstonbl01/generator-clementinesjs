@@ -1,23 +1,29 @@
 {
   "name": "generator-clementinejs",
-  "version": "1.0.0",
-  "description": "Yeoman generator",
+  "version": "1.0.2",
+  "description": "Yeoman generator for the Clementinejs boilerplate.",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "johnstonbl01/generator-clementinejs",
-  "author": {
-    "name": "Blake Johnston",
-    "email": "",
-    "url": "https://github.com/johnstonbl01"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnstonbl01/generator-clementinejs"
   },
-  "scripts": {
-    "test": "mocha"
-  },
+  "author": "Blake Johnston",
   "files": [
     "generators"
   ],
+  "scripts": {
+    "test": "mocha"
+  },
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "MEAN",
+    "MongoDB",
+    "Express",
+    "Angular",
+    "Node",
+    "javascript",
+    "boilerplate"
   ],
   "dependencies": {
     "yeoman-generator": "^0.19.0",
