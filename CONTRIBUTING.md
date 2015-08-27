@@ -7,7 +7,7 @@ This project is open source and provides multiple ways to make meaningful contri
 There are many ways to contribute:
 - **Filing an Issue** - if you find a bug or want to request an enhancement, [file an issue](https://github.com/johnstonbl01/generator-clementinejs/issues/new).
 - **Working on Issues** - feel free to pick up [any open issue](https://github.com/johnstonbl01/generator-clementinejs/issues) that you feel you're capable of addressing.
-- **Documentation** - if you enjoy writing and want to contribute to the project, try improving [our documentation](https://github.com/johnstonbl01/clementinejs/).
+- **Documentation** - if you enjoy writing and want to contribute to the project, try improving [our documentation](https://github.com/johnstonbl01/clementinejs/tree/gh-pages).
 
 #### Filing an Issue
 
@@ -70,4 +70,5 @@ Please follow these guidelines when submitting your pull request:
 - The commit message should say "(fixes#1234)" at the end of the description if it takes care of an existing issue (1234 should be replaced with the issue number)
 - Be sure to make small, purposeful pull requests. Large pull requests with multiple changes may be closed without merging.
 - All changes must have accompanying tests.
+- All changes must have any impacted documentation updated.
 - Follow the code conventions.
