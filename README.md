@@ -8,12 +8,44 @@ Clementine.js provides a lightweight boilerplate for projects where the develope
 
 ## Installation
 
+Installation is simple, but requires Yeoman and NPM as pre-requesites. For information on installing NPM, see [this document](https://github.com/johnstonbl01/clementinejs-beginner#nodejs--npm).
+
+```bash
+$ npm install -g yo
+$ mkdir your-project
+$ cd your-project
+$ yo clementinejs
+```
+
+To install different versions of the app, simply append the version name:
+	- Beginner: `$ yo clementinejs: beginner`
+	- Bare: `$ yo clementinejs: bare`
+	- FCC: `$ yo clementinejs: FCC`
+
+**Note** - the standard version is the default version.
+
+To start the application, simply type `$ gulp` into the terminal (Note that this is only for the standard version. Instructions for starting the application differ by version. See documentation below.)
+
 ## Source Code
 
 - [Clementine.js Standard](https://github.com/johnstonbl01/clementinejs)
 - [Clementine.js Bare](https://github.com/johnstonbl01/clementinejs-bare)
 - [Clementine.js Beginner](https://github.com/johnstonbl01/clementinejs-beginner)
 - [Clementine.js FCC](https://github.com/johnstonbl01/clementinejs-fcc)
+
+### Version Features
+
+| Features 				| Beginner 	| Standard 	| Bare 		| FCC 		|
+|:---------				|:--------:	|:--------:	|:---------:|:---------:|
+| Commented Code		| _Yes_ 	| _No_ 		| _No_		| _No_		|
+| Example Controller 	| _Yes_ 	| _Yes_		| _Yes_		| _Yes_		|
+| Example Directive 	| _No_ 		| _Yes_		| _No_		| _No_		|
+| Jade					| _No_ 		| _Yes_ 	| _Yes_	 	| _No_		|
+| Mongoose				| _No_		| _Yes_		| _Yes_		| _Yes_		|
+| Gulp				 	| _No_		| _Yes_		| _Yes_		| _No_		|
+| Sass					| _No_		| _Yes_		| _Yes_		| _No_		|
+| Bower					| _Yes_		| _Yes_		| _Yes_		| _No_		|
+| Authentication		| _No_		| _No_		| _No_		| _Yes_		|
 
 ## Documentation
 
