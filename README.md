@@ -18,9 +18,10 @@ $ yo clementinejs
 ```
 
 To install different versions of the app, simply append the version name:
-	- Beginner: `$ yo clementinejs: beginner`
-	- Bare: `$ yo clementinejs: bare`
-	- FCC: `$ yo clementinejs: FCC`
+
+- Beginner: `$ yo clementinejs:beginner`
+- Bare: `$ yo clementinejs:bare`
+- FCC: `$ yo clementinejs:fcc`
 
 **Note** - the standard version is the default version.
 
@@ -53,7 +54,7 @@ Documentation for the application can be [found here](http://johnstonbl01.github
 
 ## Contributing
 
-Contribution guidelines can be [found here](CONTRIBUTING.md).
+This is an open-source project, and contributions are always welcome! To see ways to contribute, please review the [contribution guidelines](http://johnstonbl01.github.io/clementinejs/developers/contributing.html).
 
 ## License
 
