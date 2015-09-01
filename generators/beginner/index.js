@@ -5,27 +5,27 @@ module.exports = yeoman.generators.Base.extend({
   writing: {
     app: function () {
       this.fs.copy(
-        this.templatePath('/app'),
+        this.templatePath('/clementinejs-beginner/app'),
         this.destinationPath('/app')
       );
       this.fs.copy(
-        this.templatePath('/public'),
+        this.templatePath('/clementinejs-beginner/public'),
         this.destinationPath('/public')
       );
       this.fs.copy(
-        this.templatePath('LICENSE.md'),
+        this.templatePath('/clementinejs-beginner/LICENSE.md'),
         this.destinationPath('/LICENSE.md')
       );
       this.fs.copy(
-        this.templatePath('package.json'),
+        this.templatePath('/clementinejs-beginner/package.json'),
         this.destinationPath('/package.json')
       );
       this.fs.copy(
-        this.templatePath('server.js'),
+        this.templatePath('/clementinejs-beginner/server.js'),
         this.destinationPath('/server.js')
       );
       this.fs.copy(
-        this.templatePath('.gitignore'),
+        this.templatePath('/clementinejs-beginner/.gitignore'),
         this.destinationPath('/.gitignore')
       );
     }

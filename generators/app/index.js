@@ -5,39 +5,39 @@ module.exports = yeoman.generators.Base.extend({
   writing: {
     app: function () {
       this.fs.copy(
-        this.templatePath('/app'),
+        this.templatePath('/clementinejs/app'),
         this.destinationPath('/app')
       );
       this.fs.copy(
-        this.templatePath('/public'),
+        this.templatePath('/clementinejs/public'),
         this.destinationPath('/public')
       );
       this.fs.copy(
-        this.templatePath('LICENSE.md'),
+        this.templatePath('/clementinejs/LICENSE.md'),
         this.destinationPath('/LICENSE.md')
       );
       this.fs.copy(
-        this.templatePath('bower.json'),
+        this.templatePath('/clementinejs/bower.json'),
         this.destinationPath('/bower.json')
       );
       this.fs.copy(
-        this.templatePath('package.json'),
+        this.templatePath('/clementinejs/package.json'),
         this.destinationPath('/package.json')
       );
       this.fs.copy(
-        this.templatePath('gulpfile.js'),
+        this.templatePath('/clementinejs/gulpfile.js'),
         this.destinationPath('/gulpfile.js')
       );
       this.fs.copy(
-        this.templatePath('server.js'),
+        this.templatePath('/clementinejs/server.js'),
         this.destinationPath('/server.js')
       );
       this.fs.copy(
-        this.templatePath('.bowerrc'),
+        this.templatePath('/clementinejs/.bowerrc'),
         this.destinationPath('/.bowerrc')
       );
       this.fs.copy(
-        this.templatePath('.gitignore'),
+        this.templatePath('/clementinejs/.gitignore'),
         this.destinationPath('/.gitignore')
       );
     }

@@ -12,6 +12,7 @@ Installation is simple, but requires Yeoman and NPM as pre-requesites. For infor
 
 ```bash
 $ npm install -g yo
+$ npm install -g generator-clementinejs
 $ mkdir your-project
 $ cd your-project
 $ yo clementinejs

@@ -23,7 +23,9 @@
     "Angular",
     "Node",
     "javascript",
-    "boilerplate"
+    "boilerplate",
+    "clementinejs",
+    "clementine"
   ],
   "dependencies": {
     "yeoman-generator": "^0.19.0",
