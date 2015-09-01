@@ -37,7 +37,7 @@ module.exports = yeoman.generators.Base.extend({
         this.destinationPath('/.bowerrc')
       );
       this.fs.copy(
-        this.templatePath('/clementinejs/.gitignore'),
+        this.templatePath('/clementinejs/.npmignore'),
         this.destinationPath('/.gitignore')
       );
     }
