@@ -1,32 +1,26 @@
 'use strict';
 
-//Initialize Dependencies
-var express = require('express'),
-	db = require('mongoose'),
-	bodyParser = require('body-parser');
+var express = require('express');
+var mongo = require('mongodb');
+var routes = require('./app/routes/index.js');
 
-var	app = express();
+var app = express();
 
-//Database connection
-db.connect('mongodb://localhost:27017/clementinejs');
+mongo.connect('mongodb://localhost:27017/clementinejs', function (err, db) {
 
-//Initialize Middleware
-app.use(bodyParser.json());
+   if (err) {
+      throw new Error('Database failed to connect!');
+   } else {
+      console.log('Successfully connected to MongoDB on port 27017.');
+   }
 
-//View Engine Configuration
-app.set('view engine', 'jade');
-app.set('views', './app/views');
+   app.use('/public', express.static(process.cwd() + '/public'));
+   app.use('/controllers', express.static(process.cwd() + '/app/controllers'));
 
-//Static directory shortcuts
-app.use('/controllers', express.static(__dirname + '/app/controllers'));
-app.use('/public', express.static(__dirname + '/public'));
-app.use('/directives', express.static(__dirname + '/app/directives'));
+   routes(app, db);
 
-//Routes
-require('./app/routes/index.js')(app);
+   app.listen(3000, function () {
+      console.log('Node.js listening on port 3000...');
+   });
 
-//listen
-var port = 3000;
-app.listen(3000, function (req, res) {
-	console.log('Listening on port ' + port + '...');
 });

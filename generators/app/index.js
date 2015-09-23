@@ -17,24 +17,12 @@ module.exports = yeoman.generators.Base.extend({
         this.destinationPath('/LICENSE.md')
       );
       this.fs.copy(
-        this.templatePath('/clementinejs/bower.json'),
-        this.destinationPath('/bower.json')
-      );
-      this.fs.copy(
         this.templatePath('/clementinejs/package.json'),
         this.destinationPath('/package.json')
       );
       this.fs.copy(
-        this.templatePath('/clementinejs/gulpfile.js'),
-        this.destinationPath('/gulpfile.js')
-      );
-      this.fs.copy(
         this.templatePath('/clementinejs/server.js'),
         this.destinationPath('/server.js')
-      );
-      this.fs.copy(
-        this.templatePath('/clementinejs/.bowerrc'),
-        this.destinationPath('/.bowerrc')
       );
       this.fs.copy(
         this.templatePath('/clementinejs/.npmignore'),

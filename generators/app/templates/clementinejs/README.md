@@ -1,18 +1,18 @@
-# Clementine.js MEAN Boilerplate
-
-**Note**: Clementine.js is currently being transitioned to a Yeoman generator and has not yet been published. The installation steps below will not work at this time.
+# Clementine.js Boilerplate
 
 ## Overview
 
-Clementine.js is a lightweight MEAN stack boilerplate intended for beginners and advanced users alike. The Standard boilerplate includes a few more bells and whistles to improve workflow, but remains a simple boilerplate without much fluff to get in the way. 
+Clementine.js is a lightweight boilerplate for fullstack JavaScript development which utilizes MongoDB, Express and Node.js. Coming in at just under 32 KB, Clementine.js is a perfect alternative to more feature-dense boilerplates.
 
-This version of the boilerplate contains a website that demonstrates the power of the stack, including some examples of how to apply Angular & data-binding using MEAN.
+Clementine.js errs on the side of transparency and simplicity, making it an ideal starting point for beginner and seasoned developers alike. Note that this implementation assumes the developer wishes to perform implementation of more complex features him- or herself.
 
 ## Versions
 
-- [Beginner](https://github.com/johnstonbl01/clementinejs-beginner): A simplified version of the boilerplate intended for developers new to JavaScript and the MEAN stack.
-- [Bare](https://github.com/johnstonbl01/clementinejs-bare): A stripped down version of the boilerplate for quick prototyping
-- [FCC](https://github.com/johnstonbl01/clementinejs-fcc): An extension of the beginner version that includes authentication & authorization
+There are 3 versions of Clementine.js:
+
+- **Standard** (this version): the simplest version of Clementine.js. Intended for those who wish for the smallest and least intrusive footprint OR to implement features on their own.
+- [**Angular**](https://github.com/johnstonbl01/clementinejs-angular): a slightly more complex version of the same application. This version employs the use of AngularJS as the front-end framework.
+- [**Free Code Camp (FCC)**](https://github.com/johnstonbl01/clementinejs-fcc): A modified version of the standard boilerplate that is intended for use with the [Free Code Camp](http://freecodecamp.com/) curriculum.
 
 ## Quick Start Guide
 
@@ -20,23 +20,38 @@ This version of the boilerplate contains a website that demonstrates the power o
 
 In order to use Clementine.js, you must have the following installed:
 
-- [Node & NPM](https://nodejs.org/)
+- [Node.js](https://nodejs.org/)
+- [NPM](https://nodejs.org/)
 - [MongoDB](http://www.mongodb.org/)
-- [Yeoman](http://yeoman.io/)
+- [Yeoman](http://yeoman.io/) (optional)
 
 ### Installation & Startup
 
-Clementine.js is easy to setup in the project directory of your choice! In the terminal:
+There are 2 ways to install Clementine.js:
+
+- Clone the GitHub Repository
+- Install via Yeoman Generator
+
+Both options are similar, and a matter of preference.
+
+**Option 1 - Clone GitHub Repo**
+
+```bash
+$ git clone https://github.com/johnstonbl01/clementinejs.git your-project
+```
+
+This will install the Clementine.js components into the `your-project` directory.
+
+**Option 2 - Yeoman Generator**
 
 ```bash
 $ npm install -g generator-clementinejs
 $ mkdir your-project
 $ cd your-project
 $ yo clementinejs
-$ gulp
 ```
 
-It's that easy!
+Note: `generator-clementinejs` must be installed globally.
 
 ## Contributing
 
@@ -48,17 +63,14 @@ Complete documentation can be [found here](http://johnstonbl01.github.io/clement
 
 ## Features
 
-| Features 				| Beginner 	| Standard 	| Bare 		| FCC 		|
-|:---------				|:--------:	|:--------:	|:---------:|:---------:|
-| Commented Code		| _Yes_ 	| _No_ 		| _No_		| _No_		|
-| Example Controller 	| _Yes_ 	| _Yes_		| _Yes_		| _Yes_		|
-| Example Directive 	| _No_ 		| _Yes_		| _No_		| _No_		|
-| Jade					| _No_ 		| _Yes_ 	| _Yes_	 	| _No_		|
-| Mongoose				| _No_		| _Yes_		| _Yes_		| _Yes_		|
-| Gulp				 	| _No_		| _Yes_		| _Yes_		| _No_		|
-| Sass					| _No_		| _Yes_		| _Yes_		| _No_		|
-| Bower					| _Yes_		| _Yes_		| _Yes_		| _No_		|
-| Authentication		| _No_		| _No_		| _No_		| _Yes_		|
+| Features           | Standard  | Angular   | FCC       |
+|:---------          |:--------: |:--------: |:---------:|
+| MongoDB            | _Yes_     | _Yes_     | _Yes_     |
+| Express            | _Yes_     | _Yes_     | _Yes_     |
+| AngularJS (1.x)    | _No_      | _Yes_     | _No_      |
+| Node.js            | _Yes_     | _Yes_     | _Yes_     |
+| Passport           | _No_      | _No_      | _Yes_     |
+| Mongoose           | _No_      | _No_      | _Yes_     |
 
 ## License
 

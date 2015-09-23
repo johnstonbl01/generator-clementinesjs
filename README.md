@@ -1,12 +1,18 @@
-# generator-clementinejs
+# Clementine.js Yeoman Generator
 
-A [Yeoman](http://yeoman.io/) generator for the Clementine.js boilerplate.
+A [Yeoman](http://yeoman.io/) generator for the [Clementine.js boilerplate](https://github.com/johnstonbl01/clementinejs).
 
-TBC
+Clementine.js is a lightweight boilerplate for fullstack JavaScript development which utilizes MongoDB, Express and Node.js. Coming in at just under 32 KB, Clementine.js is a perfect alternative to more feature-dense boilerplates.
+
+Clementine.js errs on the side of transparency and simplicity, making it an ideal starting point for beginner and seasoned developers alike. Note that this implementation assumes the developer wishes to perform implementation of more complex features him- or herself.
 
 ## Installation
 
-Installation is simple, but requires Yeoman and NPM as pre-requesites. For information on installing NPM, see [this document](https://github.com/johnstonbl01/clementinejs-beginner#nodejs--npm).
+**Prerequisites**:
+
+- [Node.js](https://nodejs.org/)
+- [NPM](https://nodejs.org/)
+- [MongoDB](http://www.mongodb.org/)
 
 ```bash
 $ npm install -g yo
@@ -16,17 +22,11 @@ $ cd your-project
 $ yo clementinejs
 ```
 
-To install different versions of the app, simply append the version name:
-
-TBC
+_Note_: Both the generator and Yeoman must be installed globally.
 
 ## Source Code
 
-TBC
-
-### Version Features
-
-TBC
+Source code for the project can be found [here](https://github.com/johnstonbl01/clementinejs).
 
 ## Documentation
 

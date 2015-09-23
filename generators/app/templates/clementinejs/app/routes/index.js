@@ -1,24 +1,17 @@
 'use strict';
 
-var	commentCtrlr = require(process.cwd() + '/app/controllers/commentCtrlr.server.js');
+var ClickHandler = require(process.cwd() + '/app/controllers/clickHandler.server.js');
 
-module.exports = function (app) {
-	//Index route
-	app.route('/')
-		.get(function (req, res) {
-			res.render('index');
-		});
+module.exports = function (app, db) {
+   var clickHandler = new ClickHandler(db);
 
-	//API routes
-	app.route('/api/comments')
-		.get(commentCtrlr.list)
-		.delete(commentCtrlr.remove)
-		.post(commentCtrlr.create);
+   app.route('/')
+      .get(function (req, res) {
+         res.sendFile(process.cwd() + '/public/index.html');
+      });
 
-	//Exception handling for unspecified routes
-	app.route('*')
-		.get(function (req, res) {
-			res.status(404);
-			res.send('Page not found.');
-		});
+   app.route('/api/clicks')
+      .get(clickHandler.getClicks)
+      .post(clickHandler.addClick)
+      .delete(clickHandler.resetClicks);
 };
