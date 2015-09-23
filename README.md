@@ -14,7 +14,7 @@ Clementine.js errs on the side of transparency and simplicity, making it an idea
 - [NPM](https://nodejs.org/)
 - [MongoDB](http://www.mongodb.org/)
 
-**Installation**
+**Installation**:
 
 ```bash
 $ npm install -g yo
