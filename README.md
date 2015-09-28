@@ -24,6 +24,8 @@ $ yo clementinejs
 
 _Note_: Both the generator and Yeoman must be installed globally.
 
+To start the application, browse to the project directory and type: `$ node server` into the terminal window. Point a browser to `localhost:3000` and you're up and running!
+
 ## Source Code
 
 Source code for the project can be found [here](https://github.com/johnstonbl01/clementinejs).
