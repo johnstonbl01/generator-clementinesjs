@@ -1,5 +1,7 @@
 # Clementine.js Yeoman Generator
 
+[![Join the chat at https://gitter.im/johnstonbl01/clementinejs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/johnstonbl01/clementinejs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A [Yeoman](http://yeoman.io/) generator for the [Clementine.js boilerplate](https://github.com/johnstonbl01/clementinejs).
 
 Clementine.js is a lightweight boilerplate for fullstack JavaScript development which utilizes MongoDB, Express and Node.js. Coming in at just under 32 KB, Clementine.js is a perfect alternative to more feature-dense boilerplates.
